@@ -1,80 +1,64 @@
-#  Répartition des Tâches – Base de Données avec Annotations Juridiques
+# Répartition des Tâches – Dictionnaire de Données
 
-**Projet :** Liste complète des champs de la base de données avec annotations juridiques  
+**Projet :** Création du dictionnaire de données basé sur les User Stories  
+**Document source :** User Stories (22 pages)  
 **Deadline :** Vendredi 22h00  
-**Supervisé par :** Chef Back-front
+**Supervisé par :** Chef Back-front  
 
 ---
 
-## Membres de l'équipe et responsabilités détaillées
+## Instruction importante
 
-### 1️ Membre Back-end 1 – Inventaire technique
-**Objectif :** Créer une liste exhaustive de tous les champs de la base de données.
+Vous devez vous baser uniquement sur les **User Stories (22 pages)** pour identifier les données nécessaires.
 
-**Actions détaillées :**
-- Identifier chaque table de la base de données.
-- Pour chaque table, lister tous les champs avec :
-  - Nom exact du champ
-  - Type de donnée (INT, VARCHAR, DATE…)
-  - Taille ou longueur (ex : VARCHAR(255))
-  - Contraintes (PRIMARY KEY, UNIQUE, NOT NULL…)
-- Documenter clairement chaque champ pour éviter toute confusion sur sa fonction.
+Comme le document contient 22 pages, on divise les pages entre les membres.  
+Chaque membre analyse sa partie pour identifier :
 
-**Livrable attendu :**
-- Tableau complet de tous les champs avec leurs caractéristiques techniques, clair et lisible.
----
-
-### 2️ Membre Back-end 2 – Vérification et harmonisation
-**Objectif :** S’assurer que la liste des champs est correcte, complète et uniforme.
-
-**Actions détaillées :**
-- Vérifier que tous les champs existants dans la base ont été listés.
-- Corriger les erreurs de noms, types ou contraintes éventuelles.
-- Standardiser la nomenclature (ex : utiliser la même casse, abréviations cohérentes).
-- Vérifier que les annotations techniques sont compréhensibles par tous les membres du groupe.
-
-**Livrable attendu :**
-- Tableau final révisé, harmonisé et validé techniquement.
+- Les entités (tables)
+- Les champs nécessaires
+- Les types de données
+- Les contraintes principales
 
 ---
 
-### 3️ Membre Sécurité – Analyse des données sensibles
-**Objectif :** Identifier les champs sensibles et proposer des mesures de sécurité.
+## Répartition
 
-**Actions détaillées :**
-- Examiner chaque champ listé par les Back-end pour détecter les informations sensibles (ex : données personnelles, financières).
-- Ajouter des annotations de sécurité pour chaque champ sensible :
-  - Niveau de sensibilité (ex : critique, modéré, faible)
-  - Recommandations de protection (ex : cryptage, accès restreint, anonymisation)
-- Collaborer avec l’équipe pour clarifier tout champ ambigu ou potentiellement sensible.
+### 🔹 Membre 1  
+Analyse des pages 1 à 6  
 
-**Livrable attendu :**
-- Liste annotée des champs sensibles avec recommandations de sécurité détaillées.
+### 🔹 Membre 2  
+Analyse des pages 7 à 12  
+
+### 🔹 Membre 3  
+Analyse des pages 13 à 17  
+
+### 🔹 Membre 4  
+Analyse des pages 18 à 22  
+---
+
+## 📘 Modèle Simple de Dictionnaire de Données (Exemple)
+
+### Table : `utilisateur`
+
+| Nom du champ   | Type     | Taille | Contraintes                     | Description                              |
+|----------------|----------|--------|----------------------------------|------------------------------------------|
+| id_user        | INT      | 11     | PRIMARY KEY, AUTO_INCREMENT      | Identifiant unique de l’utilisateur      |
+| nom            | VARCHAR  | 100    | NOT NULL                         | Nom complet de l’utilisateur             |
+| email          | VARCHAR  | 150    | UNIQUE, NOT NULL                 | Adresse email                            |
+| mot_de_passe   | VARCHAR  | 255    | NOT NULL                         | Mot de passe crypté                      |
+| date_creation  | DATETIME | —      | DEFAULT CURRENT_TIMESTAMP        | Date de création du compte               |
 
 ---
 
-### 4️ Membre Front-end – Visualisation et partage
-**Objectif :** Rendre la liste technique et juridique compréhensible et facile à consulter pour tous.
+## Objectif final
 
-**Actions détaillées :**
-- Créer une interface ou un document structuré pour visualiser tous les champs avec leurs annotations :
-  - Champs techniques (nom, type, taille, contraintes)
-  - Annotations de sécurité
-  - Annotations juridiques
-- Organiser les informations de manière claire : tableau, couleurs, icônes ou sections pour distinguer les types de données.
-- Préparer le livrable pour le partage : export PDF, Google Sheet, ou interface web simple.
-- Vérifier que le rendu est compréhensible par les non-techniciens (ex : équipe juridique).
+À la fin, on doit avoir :
 
-**Livrable attendu :**
-- Document, prête à être partagée avec l’équipe et l’équipe juridique.
+- Un dictionnaire simple  
+- Basé uniquement sur les User Stories  
+- Clair et organisé  
+- Regroupé dans un seul document  
 
 ---
 
-## [x] Critères de validation
-- Chaque champ doit inclure une annotation provenant de l’équipe juridique concernant la sensibilité des données.
-- L’ensemble des champs doit être complet, clair et validé par le Chef Back-end.
-
----
-
-##  Notes supplémentaires
-- Collaboration obligatoire entre tous les membres pour résoudre toute ambiguïté.
+Je suis à votre disposition pour les questions.
