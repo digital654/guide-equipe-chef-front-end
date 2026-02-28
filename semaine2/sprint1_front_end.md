@@ -168,7 +168,7 @@ feature/dashboard
 
 1. Chef d'équipe / Lead  
   Coordination, qualité, conventions, review et intégration finale.  
-  Tu aides l'équipe, tu corriges et tu merges les Pull Requests.
+aides l'équipe, corriges et merges les Pull Requests.
 
 2.  Membre 1 - Header + Hero  
   Navbar (menu, logo, bouton), Hero section et responsive mobile du header.
